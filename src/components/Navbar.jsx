@@ -9,11 +9,11 @@ const Navbar = () => {
     const { setShowSearch } = useContext(ShopContext)
 
   return (
-    <div className='flex items-center justify-between py-5 font-medium'>
+    <div className='flex flex-col-reverse sm:flex-row items-center justify-between py-5 font-medium gap-5'>
       
-      <Link to='/'><img src={assets.logo} alt="" className='w-32 sm:w-35' /></Link>
+      <Link to='/'><img src={assets.logo} alt="" className='w-30 sm:w-35' /></Link>
 
-      <ul className='hidden sm:flex gap-5 text-sm text-gray-700 font-semibold'>
+      <ul className='hidden sm:flex text-sm gap-5 text-gray-700 font-semibold'>
 
        <NavLink to='/' className='flex flex-col items-center gap-1'>
          <h1 >HOME</h1>
@@ -33,11 +33,11 @@ const Navbar = () => {
        </NavLink>
       </ul>
 
-      <div className='flex items-center gap-6'>
+      <div className='flex items-center sm:gap-5 gap-7 '>
         <img onClick={() => setShowSearch(true)} src={assets.search_icon} className='w-5 cursor-pointer' alt="" />
 
    
-      <div className='group relative'>
+      <div className='group relative '>
         <img src={assets.profile_icon} className='w-5 cursor-pointer' alt="" />
         <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-4'>
             <div className='flex flex-col gap-2 px-5 w-36 py-3 bg-slate-100 text-gray-500 rounded '>
