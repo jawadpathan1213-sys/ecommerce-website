@@ -4,7 +4,7 @@ import { assets } from '../assets/assets'
 const Footer = () => {
   return (
     <>
-    <div className='flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm text-gra'>
+    <div className='flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-xs sm:text-base'>
        <div>
         <img src={assets.logo} className='mb-5 w-32' alt="" />
         <p className='w-full sm:1/2 md:w-3/4 text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione molestiae ipsum modi, itaque iusto quas dolorum beatae corrupti earum. Facere architecto eos voluptas nisi, possimus minus ab voluptates illo quas!</p>
@@ -28,7 +28,7 @@ const Footer = () => {
        </div>
     </div>
     <hr className='text-gray-300'/>
-      <p className='font-semibold text-center py-3'>Copyright 2024@ greatstack.dev - All Right Reserved.</p>
+      <p className=' text-xs sm:text-base font-semibold text-center py-3 sm:py-5 '>Copyright 2024@ greatstack.dev - All Right Reserved.</p>
     </>
   )
 }
